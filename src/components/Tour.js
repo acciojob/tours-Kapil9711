@@ -16,7 +16,7 @@ const Tour = (props) => {
         id="see-more-rec6d6T3q5EBIdCfD"
         onClick={() => setShowMore((prev) => !prev)}
       >
-        {showMore ? "See less" : "See more"}
+        {showMore ? "Show less" : "See more"}
       </button>
       <p>
         {" "}
