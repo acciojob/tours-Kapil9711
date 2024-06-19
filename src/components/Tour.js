@@ -7,7 +7,9 @@ const Tour = (props) => {
   return (
     <div>
       <h1>{name}</h1>
-      <p>{showMore ? info : info.slice(0, 200)}</p>
+      <p id="tour-item-para-rec6d6T3q5EBIdCfD">
+        {showMore ? info : info.slice(0, 200)}
+      </p>
       <img src={image} alt="" />
       <p>{price}</p>
       <button onClick={() => setShowMore((prev) => !prev)}>
@@ -15,7 +17,12 @@ const Tour = (props) => {
       </button>
       <p>
         {" "}
-        <button onClick={() => deleteTour(id)}>deleted</button>
+        <button
+          id="delete-btn-rec6d6T3q5EBIdCfD"
+          onClick={() => deleteTour(id)}
+        >
+          deleted
+        </button>
       </p>
     </div>
   );
